@@ -2,8 +2,8 @@ import flet as ft
 
 from config import Config
 from event_system import Events
-from elements.main_view import MainView
-from elements.side_bar import SideBar
+from elements import MainView
+from elements import SideBar
 
 
 class PageWrapper:

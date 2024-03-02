@@ -4,6 +4,7 @@ from config import Config
 from event_system import Events, event_system
 from store.data_store import DataStore
 from .item import SideBarItem, Item
+from elements.drag_and_drop_list.drag_and_drop_list import DragAndDropListView
 
 
 class SideBar:
@@ -16,7 +17,7 @@ class SideBar:
         self._new_item = ft.Container(bgcolor=ft.colors.BROWN_200, height=Config.header_height, on_click=self._on_new_item_click)
 
         self._side_bar_items = []
-        self._list_view = ft.ListView(
+        self._list_view = DragAndDropListView(
             controls=[],
             auto_scroll=True,
         )
