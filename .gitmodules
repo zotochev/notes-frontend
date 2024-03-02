@@ -1,0 +1,3 @@
+[submodule "app/elements/drag_and_drop_list"]
+	path = app/elements/drag_and_drop_list
+	url = git@github.com:zotochev/flet-drag-and-drop-list.git

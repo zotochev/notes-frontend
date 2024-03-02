@@ -18,6 +18,7 @@ class SideBar:
         self._side_bar_items = []
         self._list_view = ft.ListView(
             controls=[],
+            auto_scroll=True,
         )
         self._items_column = ft.Column(
             controls=[self._list_view],
